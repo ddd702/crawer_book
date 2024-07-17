@@ -58,14 +58,14 @@ const startFetch = async (bookName)=>{
       
       try {
         //fs.writeFileSync(path.join(__dirname,`assets/${targetItem.log}`), JSON.stringify(targetItem));
-        fs.writeFileSync(path.join(__dirname,`assets/${targetItem.cover}`), await download(targetItem.cover_url));
+        fs.writeFileSync(path.join(process.cwd(),`assets/${targetItem.cover}`), await download(targetItem.cover_url));
         console.warn(`${bookName}： picture had downloaded,and log is deal`);
       } catch (error) {
         console.warn(`${bookName}:download err`, error.message);
       }
     }
     targetItem.log ='/'+bookName.replace(/\//g,'_')+'.log';
-    fs.writeFileSync(path.join(__dirname,`assets/${targetItem.log}`), JSON.stringify(targetItem));
+    fs.writeFileSync(path.join(process.cwd(),`assets/${targetItem.log}`), JSON.stringify(targetItem));
    
   } catch (error) {
     console.warn('getWebdata err', bookName, error.message);
