@@ -6,7 +6,7 @@
 
 ## install
 
-    npm install -g crawler_book
+  npm i @ddd702/crawler_book -g
 
 ## 配置文件的方式获取
   

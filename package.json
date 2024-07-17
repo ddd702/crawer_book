@@ -1,6 +1,6 @@
 {
   "name": "@ddd702/crawler_book",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a web crawler, crawl book from https://www.douban.com/",
   "repository": {
     "type": "git",
